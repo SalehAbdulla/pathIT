@@ -5,7 +5,7 @@
 
 // ===== GLOBAL VARIABLES =====
 let currentSlide = 1;
-const totalSlides = 28;
+const totalSlides = 30;
 let notesVisible = false;
 
 // ===== INITIALIZATION =====

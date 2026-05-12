@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathIT - IT E-Learning Platform Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="presentation-container">
+        
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <!-- Slide Counter -->
+        <div class="slide-counter" id="slideCounter">1 / 28</div>
+
+        <!-- Speaker Notes Toggle -->
+        <div class="notes-toggle" id="notesToggle">Press 'N' for Notes</div>
+
+        <!-- SLIDE 1: TITLE SLIDE -->
+        <section class="slide active" data-slide="1">
+            <div class="slide-content title-slide">
+                <div class="logo-container">
+                    <div class="logo">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 65 L25 55 L35 45 L45 35 L55 25 L65 15" stroke="#028090" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="65" cy="15" r="6" fill="#028090"/>
+                        </svg>
+                    </div>
+                    <h1 class="project-title">PathIT</h1>
+                    <p class="subtitle">IT E-Learning Platform</p>
+                </div>
+                
+                <div class="course-info">
+                    <p>IT Applied Project · IT7000 · Bahrain Polytechnic · 2026</p>
+                </div>
+
+                <div class="team-members">
+                    <h3>TEAM MEMBERS</h3>
+                    <div class="member-grid">
+                        <div class="member">
+                            <div class="member-initial">SA</div>
+                            <div class="member-info">
+                                <p class="member-name">Saleh Abdullah</p>
+                                <p class="member-role">Project Manager</p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-initial">AI</div>
+                            <div class="member-info">
+                                <p class="member-name">Ali Isa</p>
+                                <p class="member-role">UI/UX Designer</p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-initial">JT</div>
+                            <div class="member-info">
+                                <p class="member-name">Jassim Thamer</p>
+                                <p class="member-role">Frontend Developer</p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-initial">HF</div>
+                            <div class="member-info">
+                                <p class="member-name">Hadi Fadhel</p>
+                                <p class="member-role">JS & AI Interface Developer</p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-initial">FE</div>
+                            <div class="member-info">
+                                <p class="member-name">Faisal Eftekharyan</p>
+                                <p class="member-role">Content & QA Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>Opening (No verbal content - title slide displays while audience settles)</h4>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: AGENDA -->
+        <section class="slide" data-slide="2">
+            <div class="slide-header">
+                <span class="section-label">OVERVIEW</span>
+                <h2>Presentation Agenda</h2>
+            </div>
+            <div class="slide-content agenda-slide">
+                <div class="agenda-grid">
+                    <div class="agenda-item teal-accent">
+                        <div class="agenda-number">01</div>
+                        <div class="agenda-content">
+                            <h3>Project Scope & Goal</h3>
+                            <p>Slides 3–6 · Saleh Abdullah</p>
+                        </div>
+                    </div>
+                    <div class="agenda-item blue-accent">
+                        <div class="agenda-number">02</div>
+                        <div class="agenda-content">
+                            <h3>Project Plan & Timeline</h3>
+                            <p>Slides 7–9 · Faisal Eftekharyan</p>
+                        </div>
+                    </div>
+                    <div class="agenda-item purple-accent">
+                        <div class="agenda-number">03</div>
+                        <div class="agenda-content">
+                            <h3>WBS & Team Responsibilities</h3>
+                            <p>Slides 10–12 · Ali Isa</p>
+                        </div>
+                    </div>
+                    <div class="agenda-item violet-accent">
+                        <div class="agenda-number">04</div>
+                        <div class="agenda-content">
+                            <h3>Platform Design & Prototype</h3>
+                            <p>Slides 13–17 · Jassim Thamer</p>
+                        </div>
+                    </div>
+                    <div class="agenda-item orange-accent">
+                        <div class="agenda-number">05</div>
+                        <div class="agenda-content">
+                            <h3>Core Features Deep Dive</h3>
+                            <p>Slides 18–23 · Hadi Fadhel</p>
+                        </div>
+                    </div>
+                    <div class="agenda-item green-accent">
+                        <div class="agenda-number">06</div>
+                        <div class="agenda-content">
+                            <h3>Conclusion & Future Steps</h3>
+                            <p>Slides 24–28 · Faisal Eftekharyan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>Transition only - no verbal content</h4>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: PROJECT OVERVIEW - SALEH ABDULLAH -->
+        <section class="slide" data-slide="3">
+            <div class="slide-header">
+                <span class="section-label">PROJECT SCOPE · SALEH ABDULLAH</span>
+                <h2>Project Overview</h2>
+            </div>
+            <div class="slide-content">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-label">Project Sponsor</div>
+                        <div class="info-value">Dr. Augustine Finucane</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-label">Course</div>
+                        <div class="info-value">IT7000 — IT Applied Project</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-label">Budget</div>
+                        <div class="info-value">5,000 BHD</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-label">Project Duration</div>
+                        <div class="info-value">28 March 2026 – 28 May 2026 (2 months)</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-label">Team Size</div>
+                        <div class="info-value">5 members</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-label">Alignment</div>
+                        <div class="info-value highlight">UN SDG 4 — Quality Education</div>
+                    </div>
+                </div>
+                <div class="goal-statement">
+                    <h3>Project Goal</h3>
+                    <p>Build a hi-fidelity e-learning platform prototype guiding IT students through structured career paths, addressing the gap between academic learning and industry requirements.</p>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>SALEH ABDULLAH - Opening</h4>
+                <p>"Good morning everyone! I'm Saleh Abdullah, and before we dive in, let me ask you something: Have you ever noticed that when you take a wrong turn on Google Maps, it doesn't scream at you? It doesn't say 'You failed!' or 'You messed up!' No—it simply recalculates and shows you a new route. That's life. That's business. And that's exactly why we created PathIT.</p>
+                <p>[Pause for effect]</p>
+                <p>We're here to recalculate the learning journey for IT students. To give them a clear path when they feel lost. To empower them with the right materials for educational success. Because in IT education today, students face a real problem: they don't know where to start."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: PROBLEM STATEMENT - SALEH ABDULLAH -->
+        <section class="slide" data-slide="4">
+            <div class="slide-header">
+                <span class="section-label">PROJECT SCOPE · SALEH ABDULLAH</span>
+                <h2>Problem Statement</h2>
+            </div>
+            <div class="slide-content">
+                <div class="problem-banner">
+                    <h3>CORE PROBLEM</h3>
+                    <p>IT students lack a structured, self-paced learning framework that connects them to real industry career paths.</p>
+                </div>
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-number">01</div>
+                        <h4>No Clear Direction</h4>
+                        <p>Students don't know which IT specialization to pursue or where to start their learning journey.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-number">02</div>
+                        <h4>Industry Gap</h4>
+                        <p>University curricula often lag behind current industry tools, frameworks, and certification requirements.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-number">03</div>
+                        <h4>Fragmented Resources</h4>
+                        <p>Learning materials are scattered across platforms with no unified, curated path for IT career tracks.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-number">04</div>
+                        <h4>No Progress Visibility</h4>
+                        <p>Learners cannot track how far along they are or what they need to complete next in a structured way.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>SALEH ABDULLAH - Problem Statement</h4>
+                <p>"[Transition to Problem Statement - Slide 4]</p>
+                <p>Let me break this down for you. IT students today struggle with four critical gaps:</p>
+                <p>First—No Clear Direction. They don't know which specialization to pursue or where to begin their learning journey.</p>
+                <p>Second—The Industry Gap. University curricula often lag behind current industry tools, frameworks, and certification requirements.</p>
+                <p>Third—Fragmented Resources. Learning materials are scattered across platforms with no unified, curated path for IT career tracks.</p>
+                <p>And Fourth—No Progress Visibility. Learners cannot track how far along they are or what they need to complete next in a structured way."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: PROJECT GOAL & SCOPE - SALEH ABDULLAH -->
+        <section class="slide" data-slide="5">
+            <div class="slide-header">
+                <span class="section-label">PROJECT SCOPE · SALEH ABDULLAH</span>
+                <h2>Project Goal & Scope</h2>
+            </div>
+            <div class="slide-content">
+                <div class="goal-box">
+                    <h3>GOAL:</h3>
+                    <p>Build a hi-fidelity e-learning platform prototype guiding IT students through structured career paths, aligned with SDG 4 — Quality Education.</p>
+                </div>
+                <div class="scope-columns">
+                    <div class="scope-column in-scope">
+                        <h3>✓ IN SCOPE</h3>
+                        <ul>
+                            <li>Complete UI/UX prototype (7 screens, hi-fidelity)</li>
+                            <li>3 career roadmaps: Frontend, Backend, Cybersecurity</li>
+                            <li>Curated tutorials, projects & certifications per path</li>
+                            <li>Interactive quizzes and flashcard system</li>
+                            <li>Progress tracking dashboard</li>
+                            <li>Cheat sheets for quick revision</li>
+                            <li>Conceptual AI assistant interface</li>
+                            <li>Full project documentation (scope, WBS, RACI, timeline)</li>
+                        </ul>
+                    </div>
+                    <div class="scope-column out-scope">
+                        <h3>✗ OUT OF SCOPE</h3>
+                        <ul>
+                            <li>Full backend system & live database</li>
+                            <li>Real-time public deployment</li>
+                            <li>Payment or subscription features</li>
+                            <li>Functional trained AI model</li>
+                            <li>Mobile application version</li>
+                            <li>Third-party API integrations</li>
+                            <li>Post-submission maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>SALEH ABDULLAH - Goal & Scope</h4>
+                <p>"[Move to Goal & Scope - Slide 5]</p>
+                <p>So what did we do? We built PathIT—a hi-fidelity e-learning platform prototype that guides IT students through structured career paths, aligned with SDG 4: Quality Education.</p>
+                <p>[Show what's IN SCOPE with confidence]</p>
+                <p>Our platform includes: A complete UI/UX prototype with 7 interactive screens. 3 career roadmaps: Frontend Development, Backend Development, and Cybersecurity. Curated tutorials, hands-on projects, and industry certifications for each path. An interactive quiz and flashcard system for active learning. A progress tracking dashboard so students always know where they stand. Cheat sheets for quick revision. And a conceptual AI assistant interface that acts as a personal study companion."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: CONSTRAINTS & ACCEPTANCE CRITERIA - SALEH ABDULLAH -->
+        <section class="slide" data-slide="6">
+            <div class="slide-header">
+                <span class="section-label">PROJECT SCOPE · SALEH ABDULLAH</span>
+                <h2>Constraints & Acceptance Criteria</h2>
+            </div>
+            <div class="slide-content">
+                <div class="two-column-layout">
+                    <div class="left-column">
+                        <h3>Constraints</h3>
+                        <div class="constraint-item">
+                            <div class="constraint-label time">Time</div>
+                            <p class="constraint-desc">2-month delivery window.</p>
+                            <p class="mitigation"><strong>Mitigation:</strong> Phase plan defined from week one with fixed deadlines per stage.</p>
+                        </div>
+                        <div class="constraint-item">
+                            <div class="constraint-label technical">Technical</div>
+                            <p class="constraint-desc">Prototype only — no live backend.</p>
+                            <p class="mitigation"><strong>Mitigation:</strong> Simulate functionality with mock data and interactive wireframes.</p>
+                        </div>
+                        <div class="constraint-item">
+                            <div class="constraint-label team">Team Coordination</div>
+                            <p class="constraint-desc">5 members with varying schedules.</p>
+                            <p class="mitigation"><strong>Mitigation:</strong> Weekly meetings, shared PM tool, defined role split.</p>
+                        </div>
+                        <div class="constraint-item">
+                            <div class="constraint-label resources">Resources</div>
+                            <p class="constraint-desc">No licensed tools or paid datasets.</p>
+                            <p class="mitigation"><strong>Mitigation:</strong> Rely entirely on free, open-access tools and public resources.</p>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <h3>Acceptance Criteria</h3>
+                        <ul class="criteria-list">
+                            <li>✓ Career roadmaps for ≥ 3 IT specializations with milestones</li>
+                            <li>✓ UI structured and accessible to all digital skill levels</li>
+                            <li>✓ Quizzes, flashcards, cheatsheets all demonstrated</li>
+                            <li>✓ AI assistant conceptual interface included</li>
+                            <li>✓ All deliverables meet specified quality standards</li>
+                            <li>✓ User testing confirms platform usability</li>
+                            <li>✓ Final approval received from Dr. Gus Finucane</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>SALEH ABDULLAH - Constraints & Acceptance</h4>
+                <p>"[Address constraints clearly - Slide 6]</p>
+                <p>Now, we faced real constraints. We had a 2-month delivery window, we're working at prototype phase without a live backend, coordinating 5 team members with different schedules, and relying entirely on free, open-access tools.</p>
+                <p>But here's what we committed to: 7 acceptance criteria that ensure this platform delivers on its promise.</p>
+                <p>[Pause, then transition with authority]</p>
+                <p>This isn't just a project. This is a solution to a real problem affecting thousands of IT students. And in the next 20 minutes, my team and I will walk you through exactly how we built it, how it works, and where it's going. Let's begin."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: SECTION DIVIDER - FAISAL EFTEKHARYAN -->
+        <section class="slide section-divider" data-slide="7">
+            <div class="divider-content blue-theme">
+                <h2>PART 02 · SLIDES 7–9</h2>
+                <h1>Project Plan & Timeline</h1>
+                <p class="presenter-name">Faisal Eftekharyan · Content & QA Coordinator</p>
+            </div>
+            <div class="speaker-notes">
+                <h4>FAISAL EFTEKHARYAN - Opening</h4>
+                <p>"Thank you, Saleh. I'm Faisal Eftekharyan, and if there's one thing that separates successful projects from failed ones, it's execution. Ideas are cheap. Execution is everything. So let me show you how we turned this vision into reality—on time, on scope, and on budget."</p>
+            </div>
+        </section>
+
+        <!-- Continue with remaining slides... -->
+        <!-- Due to length, I'll provide the next batch in the following message -->
+        
+    </div>
+<!-- SLIDE 16: SCREEN DETAILS - JASSIM THAMER -->
+        <section class="slide" data-slide="16">
+            <div class="slide-header">
+                <span class="section-label">PLATFORM DESIGN · JASSIM THAMER</span>
+                <h2>Screen Details: Dashboard & Career Paths</h2>
+            </div>
+            <div class="slide-content">
+                <div class="two-column-detail">
+                    <div class="detail-column">
+                        <h3>01 Dashboard</h3>
+                        <ul class="detail-list">
+                            <li>3 stat cards: overall %, topics done, avg quiz score</li>
+                            <li>Path progress: colored bars per specialization</li>
+                            <li>Recent activity feed to resume where you left off</li>
+                            <li>Badges row: earned vs. locked to motivate progress</li>
+                            <li>Quick-access sidebar nav to all 7 sections</li>
+                            <li>User profile footer (name, role indicator)</li>
+                        </ul>
+                    </div>
+                    <div class="detail-column">
+                        <h3>02 Career Paths</h3>
+                        <ul class="detail-list">
+                            <li>3 cards side-by-side: Frontend, Backend, Cybersecurity</li>
+                            <li>Each card shows: short description, topic count, difficulty badge</li>
+                            <li>Clicking expands a detail panel below the cards</li>
+                            <li>Enroll button for new users; Continue button if enrolled</li>
+                            <li>Simple layout to avoid overwhelming first-time visitors</li>
+                            <li>Difficulty levels: Intermediate (Frontend/Backend), Beginner (Cyber)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>JASSIM THAMER - Screen Details 1</h4>
+                <p>Continue naturally from previous slide describing dashboard and career paths in detail.</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 17: SCREEN DETAILS LEARNING TOOLS - JASSIM THAMER -->
+        <section class="slide" data-slide="17">
+            <div class="slide-header">
+                <span class="section-label">PLATFORM DESIGN · JASSIM THAMER</span>
+                <h2>Screen Details: Learning Tools</h2>
+            </div>
+            <div class="slide-content">
+                <div class="tools-grid">
+                    <div class="tool-detail">
+                        <h3>03 Roadmap</h3>
+                        <ul class="detail-list">
+                            <li>Level-by-level timeline for chosen path</li>
+                            <li>✓ Checkmark on completed levels</li>
+                            <li>Highlighted active level with quick-launch buttons</li>
+                            <li>Future levels locked until current complete</li>
+                        </ul>
+                    </div>
+                    <div class="tool-detail">
+                        <h3>04 Quiz</h3>
+                        <ul class="detail-list">
+                            <li>MCQ tied to current topic level</li>
+                            <li>Progress bar shows question position</li>
+                            <li>Instant feedback: green=correct, red=wrong</li>
+                            <li>Score summary screen before advancing</li>
+                        </ul>
+                    </div>
+                    <div class="tool-detail">
+                        <h3>05 Flashcards</h3>
+                        <ul class="detail-list">
+                            <li>Tap to flip: term → definition</li>
+                            <li>Scoped to active roadmap topic</li>
+                            <li>Previous / Next navigation</li>
+                            <li>Card position counter (e.g. 1 of 4)</li>
+                        </ul>
+                    </div>
+                    <div class="tool-detail">
+                        <h3>06 Cheatsheet</h3>
+                        <ul class="detail-list">
+                            <li>Sectioned reference (vars, functions, arrays, DOM)</li>
+                            <li>Left: plain description · Right: monospace code</li>
+                            <li>Open without leaving roadmap position</li>
+                            <li>Instant visual lookup, no scrolling needed</li>
+                        </ul>
+                    </div>
+                    <div class="tool-detail full-width">
+                        <h3>07 AI Assistant</h3>
+                        <ul class="detail-list">
+                            <li>Conversational study companion aware of your path and progress</li>
+                            <li>Quick prompts: "Which path should I start with?", "Explain closures", "How is backend different from frontend?"</li>
+                            <li>Personalized recommendations based on your current level</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>JASSIM THAMER - Closing</h4>
+                <p>"This isn't a prototype that looks like a product. This is a product-ready design. And Hadi is going to show you the intelligence underneath it."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 18: SECTION DIVIDER - HADI FADHEL -->
+        <section class="slide section-divider" data-slide="18">
+            <div class="divider-content orange-theme">
+                <h2>PART 05 · SLIDES 18–23</h2>
+                <h1>Core Features Deep Dive</h1>
+                <p class="presenter-name">Hadi Fadhel · JS & AI Interface Developer</p>
+            </div>
+            <div class="speaker-notes">
+                <h4>HADI FADHEL - Opening</h4>
+                <p>"Thank you, Jassim. I'm Hadi Fadhel, and here's what I learned building PathIT: design gets people's attention. Functionality keeps it. So while Jassim showed you what it looks like, I'm going to show you how it works."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 19: ADAPTIVE ROADMAP & PROGRESS - HADI FADHEL -->
+        <section class="slide" data-slide="19">
+            <div class="slide-header">
+                <span class="section-label">FEATURES · HADI FADHEL</span>
+                <h2>Feature: Adaptive Roadmap & Progress System</h2>
+            </div>
+            <div class="slide-content">
+                <div class="feature-columns">
+                    <div class="feature-column">
+                        <h3>Adaptive Roadmap</h3>
+                        <ul class="feature-list">
+                            <li>3 independent paths: Frontend, Backend, Cybersecurity</li>
+                            <li>Each path broken into numbered levels with topics</li>
+                            <li>Levels lock sequentially — can't skip ahead</li>
+                            <li>Completed levels display a checkmark indicator</li>
+                            <li>Active level highlighted with direct quiz/flashcard/cheatsheet shortcuts</li>
+                            <li>Milestone badges unlock on level completion</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <h3>Progress Dashboard</h3>
+                        <ul class="feature-list">
+                            <li>3 stat cards: overall %, topics completed, avg quiz score</li>
+                            <li>Individual progress bars per specialization with color coding</li>
+                            <li>Recent activity feed shows last actions across all paths</li>
+                            <li>Badge shelf: earned badges shown, locked ones grayed out</li>
+                            <li>All data powered by simulated mock backend</li>
+                            <li>Designed to be extensible to live data in future iterations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>HADI FADHEL - Adaptive Roadmap</h4>
+                <p>"[Slide 19 - Adaptive Roadmap & Progress System]</p>
+                <p>Let's start with the Adaptive Roadmap.</p>
+                <p>We built 3 independent career paths: Frontend Development, Backend Development, and Cybersecurity. Each path is broken into numbered levels with specific topics. And here's the critical part: levels lock sequentially. You can't skip ahead. Why? Because in real learning, you can't master React before you understand JavaScript fundamentals. The platform enforces that structure.</p>
+                <p>Completed levels display a checkmark. Your active level is highlighted with direct shortcuts to quiz, flashcard, and cheatsheet. And when you complete a level, milestone badges unlock to keep you motivated.</p>
+                <p>Now, the Progress Dashboard ties this all together. Three stat cards show your overall completion percentage, topics completed, and average quiz score. Individual progress bars per specialization with color coding—so if you're 60% through Frontend but only 20% through Backend, you see that instantly. A recent activity feed shows your last actions across all paths. And a badge shelf displays what you've earned versus what's still locked.</p>
+                <p>All of this is powered by simulated mock data for this prototype—but it's designed to be fully extensible to live data in future iterations."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 20: INTERACTIVE QUIZ SYSTEM - HADI FADHEL -->
+        <section class="slide" data-slide="20">
+            <div class="slide-header">
+                <span class="section-label">FEATURES · HADI FADHEL</span>
+                <h2>Feature: Interactive Quiz System</h2>
+            </div>
+            <div class="slide-content">
+                <div class="quiz-explanation">
+                    <h3>How the Quiz Works</h3>
+                    <p>Each quiz is tied to the current roadmap level. Questions are multiple-choice. A progress bar at the top tells you how far through the quiz you are. Answers give immediate feedback before moving to the next question.</p>
+                </div>
+                <div class="quiz-states">
+                    <div class="state-card">
+                        <h4 class="state-title unanswered">Unanswered State</h4>
+                        <p>Question displayed with 4 answer options. All options neutral styling. Progress indicator shows position (e.g. Question 2 of 8). Score tracker visible top-right.</p>
+                    </div>
+                    <div class="state-card">
+                        <h4 class="state-title correct">Correct Answer</h4>
+                        <p>Selected option turns green immediately. Short explanation appears below explaining WHY the answer is correct. 'Next Question →' button activates.</p>
+                    </div>
+                    <div class="state-card">
+                        <h4 class="state-title wrong">Wrong Answer</h4>
+                        <p>Selected option turns red. The correct answer is highlighted in green simultaneously. Learner still sees the right answer — learning from mistakes is the goal.</p>
+                    </div>
+                </div>
+                <div class="quiz-note">
+                    <p><strong>End of Quiz:</strong> Score summary screen (X/Y correct) before unlocking next level.</p>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>HADI FADHEL - Quiz System</h4>
+                <p>"[Slide 20 - Interactive Quiz System]</p>
+                <p>Now let's talk about the Quiz System, because this is where learning becomes active.</p>
+                <p>Each quiz is tied to your current roadmap level. Questions are multiple-choice. A progress bar at the top tells you how far through the quiz you are. And answers give immediate feedback before moving to the next question.</p>
+                <p>Three states: Unanswered—question displayed, all options neutral. Correct Answer—selected option turns green, short explanation appears below explaining why the answer is correct. Wrong Answer—selected option turns red, but the correct answer is highlighted in green simultaneously. The learner still sees the right answer—because learning from mistakes is the goal.</p>
+                <p>At the end, a score summary screen shows X out of Y correct before unlocking the next level."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 21: FLASHCARDS & CHEATSHEET - HADI FADHEL -->
+        <section class="slide" data-slide="21">
+            <div class="slide-header">
+                <span class="section-label">FEATURES · HADI FADHEL</span>
+                <h2>Feature: Flashcards & Cheatsheet</h2>
+            </div>
+            <div class="slide-content">
+                <div class="feature-columns">
+                    <div class="feature-column">
+                        <h3>Flashcards</h3>
+                        <ul class="feature-list">
+                            <li>Flip-card interaction: term on front, definition on back</li>
+                            <li>Cards scoped to the active roadmap topic only</li>
+                            <li>Previous / Next button navigation through the deck</li>
+                            <li>Counter shows position: 'Card 2 of 8'</li>
+                            <li>Designed for rapid revision — not deep reading</li>
+                            <li>Each specialization has its own flashcard deck</li>
+                            <li>Works on both desktop and mobile viewport widths</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <h3>Cheatsheet</h3>
+                        <ul class="feature-list">
+                            <li>Quick-reference without leaving roadmap position</li>
+                            <li>Broken into logical sections per topic (e.g. JavaScript):
+                                <ul>
+                                    <li>Variable Declarations (let, const, var)</li>
+                                    <li>Functions (declaration, arrow, default params)</li>
+                                    <li>Array Methods (map, filter, reduce)</li>
+                                    <li>DOM Manipulation (querySelector, events)</li>
+                                </ul>
+                            </li>
+                            <li>Two-column: plain description left, code right in monospace</li>
+                            <li>Glance → find → return to work in seconds</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>HADI FADHEL - Flashcards & Cheatsheet</h4>
+                <p>"[Slide 21 - Flashcards & Cheatsheet]</p>
+                <p>For revision, we built two tools: Flashcards and Cheatsheets.</p>
+                <p>Flashcards are flip-card interactions—term on front, definition on back. They're scoped to your active roadmap topic, so you're always reviewing what's relevant. Previous/Next navigation, position counter (Card 2 of 8), designed for rapid revision.</p>
+                <p>Cheatsheets are quick-reference pages you can open without leaving your roadmap position. Organized by logical sections—for JavaScript, that means variable declarations, functions, array methods, DOM manipulation. Two-column layout: plain description left, code in monospace right. Glance, find, return to work—all in seconds."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 22: AI STUDY ASSISTANT - HADI FADHEL -->
+        <section class="slide" data-slide="22">
+            <div class="slide-header">
+                <span class="section-label">FEATURES · HADI FADHEL</span>
+                <h2>Feature: AI Study Assistant</h2>
+            </div>
+            <div class="slide-content">
+                <div class="ai-intro">
+                    <p class="ai-description">Conceptual AI-powered companion that knows your current path and progress level, giving personalized recommendations rather than generic answers.</p>
+                </div>
+                <div class="ai-features-grid">
+                    <div class="ai-feature">
+                        <h4>Path Selection Guidance</h4>
+                        <p>Recommends which specialization to start with based on your background and goals. E.g. 'Start with Frontend — it gives immediate visual feedback and builds a solid base for Backend and Cybersecurity.'</p>
+                    </div>
+                    <div class="ai-feature">
+                        <h4>Concept Explanations</h4>
+                        <p>Ask it to explain any IT concept from your current level in plain language. Provides simple analogies and connects concepts back to your active roadmap topic.</p>
+                    </div>
+                    <div class="ai-feature">
+                        <h4>Certification Advice</h4>
+                        <p>Suggests industry certifications worth pursuing per specialization (e.g. CompTIA Security+ for Cybersecurity) based on where you are in the roadmap.</p>
+                    </div>
+                    <div class="ai-feature">
+                        <h4>Quick Prompts</h4>
+                        <p>Pre-built starter prompts so users never face a blank screen: 'Which path should I start with?', 'Explain closures in JavaScript', 'How is backend different from frontend?'</p>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>HADI FADHEL - AI Assistant</h4>
+                <p>"[Slide 22 - AI Study Assistant]</p>
+                <p>And finally, the AI Assistant.</p>
+                <p>This is a conceptual AI-powered companion that knows your current path and progress level. It gives personalized recommendations rather than generic answers.</p>
+                <p>Path Selection Guidance: Recommends which specialization to start with based on your background and goals.</p>
+                <p>Concept Explanations: Ask it to explain any IT concept from your current level in plain language.</p>
+                <p>Certification Advice: Suggests industry certifications worth pursuing per specialization based on where you are in the roadmap.</p>
+                <p>Quick Prompts: Pre-built starter prompts so users never face a blank screen—'Which path should I start with?', 'Explain closures in JavaScript', 'How is backend different from frontend?'</p>
+                <p>[Pause, then close with authority]</p>
+                <p>This is not a passive learning platform. This is active, adaptive, intelligent learning. And Faisal is going to wrap it all up by showing you where this goes next."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 23: PROJECT ASSUMPTIONS - HADI FADHEL -->
+        <section class="slide" data-slide="23">
+            <div class="slide-header">
+                <span class="section-label">FEATURES · HADI FADHEL</span>
+                <h2>Project Assumptions & Technical Notes</h2>
+            </div>
+            <div class="slide-content">
+                <div class="two-column-layout">
+                    <div class="left-column">
+                        <h3>Project Assumptions</h3>
+                        <ul class="assumptions-list">
+                            <li>All team members have access to design/development tools for the full project duration</li>
+                            <li>Target users are university students or IT beginners with internet access and basic digital literacy</li>
+                            <li>Interactivity (quizzes, flashcards) demonstrated using simulated data — no real-time backend</li>
+                            <li>Team's technical expertise is sufficient to build the prototype to the required standard</li>
+                            <li>Stakeholder and academic feedback will be prompt and constructive throughout</li>
+                            <li>Project scope will not change after plan approval</li>
+                            <li>IT career content and learning resources available from credible, freely accessible sources</li>
+                            <li>Project adheres to the 5,000 BHD budget and the academic submission schedule</li>
+                        </ul>
+                    </div>
+                    <div class="right-column">
+                        <h3>Project Info</h3>
+                        <div class="info-table">
+                            <div class="info-row">
+                                <span class="info-key">Sponsor</span>
+                                <span class="info-val">Dr. Gus Finucane</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key">Course</span>
+                                <span class="info-val">IT7000 — IT Applied Project</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key">Budget</span>
+                                <span class="info-val">5,000 BHD</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key">Kick-off</span>
+                                <span class="info-val">28 March 2026</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key">Deadline</span>
+                                <span class="info-val">28 May 2026</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key">Team size</span>
+                                <span class="info-val">5 members</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key">Prototype</span>
+                                <span class="info-val">Figma (hi-fidelity)</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key">Stack</span>
+                                <span class="info-val">HTML, CSS, JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>HADI FADHEL - Technical Notes</h4>
+                <p>Brief overview of assumptions and project specifications before transitioning to Faisal.</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 24: SECTION DIVIDER - FAISAL EFTEKHARYAN -->
+        <section class="slide section-divider" data-slide="24">
+            <div class="divider-content green-theme">
+                <h2>PART 06 · SLIDES 24–28</h2>
+                <h1>Conclusion & Future Steps</h1>
+                <p class="presenter-name">Faisal Eftekharyan · Content & QA Coordinator</p>
+            </div>
+            <div class="speaker-notes">
+                <h4>FAISAL EFTEKHARYAN - Opening</h4>
+                <p>"Thank you, Hadi. I'm Faisal Eftekharyan, and I want to close with two things: what we accomplished, and where this is going."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 25: KEY OUTCOMES - FAISAL EFTEKHARYAN -->
+        <section class="slide" data-slide="25">
+            <div class="slide-header">
+                <span class="section-label">CONCLUSION · FAISAL EFTEKHARYAN</span>
+                <h2>Key Outcomes</h2>
+            </div>
+            <div class="slide-content">
+                <div class="outcomes-grid">
+                    <div class="outcome-card">
+                        <div class="outcome-number">01</div>
+                        <h4>7-Screen Interactive Prototype</h4>
+                        <p>A complete hi-fidelity Figma prototype covering all user journeys: onboarding, path selection, roadmap progression, quizzing, revision, and AI guidance.</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-number">02</div>
+                        <h4>3 Structured Career Roadmaps</h4>
+                        <p>Frontend Development (12 topics, Intermediate), Backend Development (14 topics, Intermediate), and Cybersecurity (11 topics, Beginner) — each with curated resources.</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-number">03</div>
+                        <h4>Coherent Brand Identity</h4>
+                        <p>PathIT brand established with consistent teal accent, dark base theme, typography system, and component library across all 7 screens.</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-number">04</div>
+                        <h4>Full Project Documentation</h4>
+                        <p>Scope statement, WBS (5 phases), RACI matrix, 4-week timeline with critical path, risk log, and team role assignments all completed to standard.</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-number">05</div>
+                        <h4>On-Time Delivery</h4>
+                        <p>Team met all internal weekly milestones. Roadmap finalized Apr 3, design locked Apr 10, content ready Apr 17, prototype verified Apr 25.</p>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-number">06</div>
+                        <h4>SDG 4 Alignment</h4>
+                        <p>Platform directly supports Quality Education by reducing the knowledge gap between academic learning and real-world IT career requirements.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>FAISAL EFTEKHARYAN - Key Outcomes</h4>
+                <p>"[Slide 25 - Key Outcomes]</p>
+                <p>Let me summarize what we delivered in 2 months:</p>
+                <p>First—A 7-Screen Interactive Prototype. Not a mockup. Not a concept. A complete hi-fidelity Figma prototype covering all user journeys: onboarding, path selection, roadmap progression, quizzing, revision, and AI guidance.</p>
+                <p>Second—3 Structured Career Roadmaps. Frontend Development (12 topics, Intermediate), Backend Development (14 topics, Intermediate), and Cybersecurity (11 topics, Beginner)—each with curated resources.</p>
+                <p>Third—A Coherent Brand Identity. PathIT brand established with consistent teal accent, dark base theme, typography system, and component library across all 7 screens.</p>
+                <p>Fourth—Full Project Documentation. Scope statement, WBS across 5 phases, RACI matrix, 4-week timeline with critical path, risk log, and team role assignments—all completed to standard.</p>
+                <p>Fifth—On-Time Delivery. We met all internal weekly milestones. Roadmap finalized April 3rd. Design locked April 10th. Content ready April 17th. Prototype verified April 25th. Zero delays.</p>
+                <p>And Sixth—SDG 4 Alignment. This platform directly supports Quality Education by reducing the knowledge gap between academic learning and real-world IT career requirements."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 26: FUTURE ENHANCEMENTS - FAISAL EFTEKHARYAN -->
+        <section class="slide" data-slide="26">
+            <div class="slide-header">
+                <span class="section-label">CONCLUSION · FAISAL EFTEKHARYAN</span>
+                <h2>Future Enhancements</h2>
+            </div>
+            <div class="slide-content">
+                <div class="phases-grid">
+                    <div class="phase-card phase-2a">
+                        <div class="phase-badge">Phase 2</div>
+                        <h4>Live Backend & User Accounts</h4>
+                        <p>Build a real database with user authentication, persistent progress tracking, and dynamic content management so roadmaps can be updated without code changes.</p>
+                    </div>
+                    <div class="phase-card phase-2b">
+                        <div class="phase-badge">Phase 2</div>
+                        <h4>Functional AI Model</h4>
+                        <p>Replace conceptual AI interface with a trained model that adapts recommendations based on quiz performance, topic struggles, and completion patterns.</p>
+                    </div>
+                    <div class="phase-card phase-3a">
+                        <div class="phase-badge">Phase 3</div>
+                        <h4>Mobile Application</h4>
+                        <p>Convert the platform design to a native or PWA mobile app. Most learners study on phones — the existing design system ports well to smaller screens.</p>
+                    </div>
+                    <div class="phase-card phase-3b">
+                        <div class="phase-badge">Phase 3</div>
+                        <h4>Expanded Career Paths</h4>
+                        <p>Add Data Science, Cloud Computing, DevOps, and UI/UX Design as new specializations with the same structured roadmap format.</p>
+                    </div>
+                    <div class="phase-card phase-4a">
+                        <div class="phase-badge">Phase 4</div>
+                        <h4>Community Layer</h4>
+                        <p>Discussion boards, peer study groups, and mentorship matching — transforming PathIT from a solo learning tool into a connected learner community.</p>
+                    </div>
+                    <div class="phase-card phase-4b">
+                        <div class="phase-badge">Phase 4</div>
+                        <h4>University Integration</h4>
+                        <p>Partner with Bahrain Polytechnic and other GCC institutions to incorporate PathIT as a structured supplement to existing IT programmes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>FAISAL EFTEKHARYAN - Future Enhancements</h4>
+                <p>"[Slide 26 - Future Enhancements]</p>
+                <p>But here's the truth: we're not done. This is Phase 1. Let me show you what comes next.</p>
+                <p>Phase 2: Live Backend & User Accounts. Build a real database with user authentication, persistent progress tracking, and dynamic content management so roadmaps can be updated without code changes. Replace the conceptual AI interface with a trained model that adapts recommendations based on quiz performance, topic struggles, and completion patterns.</p>
+                <p>Phase 3: Mobile Application & Expanded Paths. Convert the platform to a native or PWA mobile app—because most learners study on phones. Add Data Science, Cloud Computing, DevOps, and UI/UX Design as new specializations with the same structured roadmap format.</p>
+                <p>Phase 4: Community Layer & University Integration. Discussion boards, peer study groups, mentorship matching—transforming PathIT from a solo learning tool into a connected learner community. Partner with Bahrain Polytechnic and other GCC institutions to incorporate PathIT as a structured supplement to existing IT programs."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 27: PROJECT REFLECTION - FAISAL EFTEKHARYAN -->
+        <section class="slide" data-slide="27">
+            <div class="slide-header">
+                <span class="section-label">CONCLUSION · FAISAL EFTEKHARYAN</span>
+                <h2>Project Reflection</h2>
+            </div>
+            <div class="slide-content">
+                <div class="reflection-columns">
+                    <div class="reflection-column went-well">
+                        <h3>What Went Well</h3>
+                        <ul>
+                            <li>Strong team coordination with clear role separation</li>
+                            <li>All four internal weekly milestones met on time</li>
+                            <li>Design system stayed consistent across all 7 screens</li>
+                            <li>Scope was well-defined and did not drift</li>
+                            <li>Mock data successfully simulated real platform behavior</li>
+                            <li>Documentation (WBS, RACI, timeline) completed to standard</li>
+                        </ul>
+                    </div>
+                    <div class="reflection-column challenges">
+                        <h3>Challenges Faced</h3>
+                        <ul>
+                            <li>2-month window was tight for 5 deliverable stages</li>
+                            <li>Coordinating 5 schedules required consistent communication</li>
+                            <li>Staying at prototype phase limits demonstrating real functionality</li>
+                            <li>AI complexity meant keeping it conceptual rather than functional</li>
+                            <li>Sourcing free, credible learning resources for all 3 paths</li>
+                            <li>Ensuring design remained accessible without compromising aesthetics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>FAISAL EFTEKHARYAN - Reflection</h4>
+                <p>"[Slide 27 - Project Reflection]</p>
+                <p>Let me be honest about what went well and what challenged us.</p>
+                <p>What Went Well: Strong team coordination with clear role separation. All four internal weekly milestones met on time. Design system stayed consistent across all 7 screens. Scope was well-defined and did not drift. Mock data successfully simulated real platform behavior. Documentation completed to standard.</p>
+                <p>Challenges We Faced: 2-month window was tight for 5 deliverable stages. Coordinating 5 schedules required consistent communication. Staying at prototype phase limits demonstrating real functionality. AI complexity meant keeping it conceptual rather than functional. Sourcing free, credible learning resources for all 3 paths. Ensuring design remained accessible without compromising aesthetics.</p>
+                <p>But here's what matters: we solved every one of those challenges. Not by luck. By structure, accountability, and execution."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 28: FINAL SLIDE - FAISAL EFTEKHARYAN -->
+        <section class="slide final-slide" data-slide="28">
+            <div class="slide-content">
+                <div class="final-message">
+                    <div class="final-logo">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 82 L30 70 L42 58 L54 46 L66 34 L78 22" stroke="#028090" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="78" cy="22" r="7" fill="#028090"/>
+                        </svg>
+                    </div>
+                    <h1>Thank You</h1>
+                    <blockquote>
+                        "PathIT is built around the idea that everyone deserves<br>
+                        a clear path forward in IT — regardless of where they are starting from."
+                    </blockquote>
+                    <div class="final-credits">
+                        <p><strong>Bahrain Polytechnic · IT7000 – IT Applied Project · 2026</strong></p>
+                        <p>Saleh Abdullah · Ali Isa · Jassim Thamer · Hadi Fadhel · Faisal Eftekharyan</p>
+                        <p>Supervised by: Dr. Gus Finucane · Internal Moderator: Dr. Abdelhameed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                <h4>FAISAL EFTEKHARYAN - Closing</h4>
+                <p>"[Slide 28 - Final Slide]</p>
+                <p>[Pause, then close with conviction]</p>
+                <p>PathIT is built around the idea that everyone deserves a clear path forward in IT—regardless of where they are starting from.</p>
+                <p>We started this project with a question: What if we could recalculate a student's journey the way Google Maps recalculates a route? What if we could turn confusion into clarity? What if we could make IT education not just accessible, but navigable?</p>
+                <p>Today, we've answered that question. And this is just the beginning.</p>
+                <p>Thank you."</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

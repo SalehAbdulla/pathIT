@@ -5,8 +5,8 @@
 
 // ===== GLOBAL VARIABLES =====
 let currentSlide = 1;
-const totalSlides = 30;
-let notesVisible = false;
+const totalSlides = 29;
+const notesVisible = false;
 
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', () => {
